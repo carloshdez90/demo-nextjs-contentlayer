@@ -1,7 +1,10 @@
 import { allPosts } from "@/.contentlayer/generated"
 import Link from "next/link"
-
+useEffect(() => {
+  console.log('My public environment variable:', process.env.NEXT_PUBLIC_ENV_NAME);
+}, []);
 export default function Home() {
+  
   return (
     <div className="prose dark:prose-invert">
       {allPosts.map((post) => (
