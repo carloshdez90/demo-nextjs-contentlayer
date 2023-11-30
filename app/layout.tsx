@@ -17,6 +17,9 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  
+  console.log('My public environment variable:', process.env.NEXT_PUBLIC_ENV_NAME);
+
   return (
     <html lang="en">
       <body
