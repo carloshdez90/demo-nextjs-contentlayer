@@ -25,7 +25,7 @@ export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const page = await getPageFromParams(params)
-
+  console.log({process.env.ENV_NAME})
   if (!page) {
     return {}
   }
