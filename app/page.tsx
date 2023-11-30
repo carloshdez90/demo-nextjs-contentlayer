@@ -13,7 +13,7 @@ export default function Home() {
             <h2>{post.title}</h2>
           </Link>
           {post.description && <p>{post.description}</p>}
-          <p>{process.env.NEXT_PUBLIC_ENV_NAME}</p>
+          <p>Variable: {process.env.NEXT_PUBLIC_ENV_NAME}</p>
         </article>
       ))}
     </div>
